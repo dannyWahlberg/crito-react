@@ -1,14 +1,15 @@
 import React from 'react'
 
 import logo_footer from '../assets/images/crito-logo-footer.svg'
+import footer_waves from '@images/footer-waves.svg'
 
 const Footer = () => {
   return (
     <footer>
 
-    <div class="content container">
+    <div className="content container">
 
-        <div class="crito-logo">
+        <div className="crito-logo">
             <a href="#"><img src={logo_footer} alt="crito logo" /></a>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates!
@@ -18,7 +19,7 @@ const Footer = () => {
 
 
 
-        <div class="company">
+        <div className="company">
             <h3>Company</h3>
 
             <ul>
@@ -29,7 +30,7 @@ const Footer = () => {
             </ul>
         </div>
 
-        <div class="help">
+        <div className="help">
             <h3>Help</h3>
             <ul>
                 <li><a href="">Customer Support</a></li>
@@ -39,7 +40,7 @@ const Footer = () => {
             </ul>
         </div>
 
-        <div class="resources">
+        <div className="resources">
             <h3>Resources</h3>
             <ul>
                 <li><a href="">Free eBooks</a></li>
@@ -49,7 +50,7 @@ const Footer = () => {
             </ul>
         </div>
 
-        <div class="links">
+        <div className="links">
             <h3>Link</h3>
             <ul>
                 <li><a href="">Free eBooks</a></li>
@@ -62,17 +63,17 @@ const Footer = () => {
 
 
     </div>
-    <div class="bottom">
-        <img class="footer-wave" src="images/footer-waves.svg" alt="" />
-        <div class="bottom-section container">
-            <p class="copyright">
+    <div className="bottom">
+        <img className="footer-wave" src={footer_waves} alt="" />
+        <div className="bottom-section container">
+            <p className="copyright">
                 © 2023 Crito - Consulting Company Inc. All Rights Reserved.
             </p>
-            <div class="socialmedia-bar">
-                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <div className="socialmedia-bar">
+                <a href="https://facebook.com" target="_blank"><i className="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
             </div>
 
         </div>

@@ -20,6 +20,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
 }
 
 .bottom-border {
@@ -201,6 +205,7 @@ body {
 header {
     background-color: #F0EFE9;
     padding: 16px;
+    
 
     .container {
         display: grid;
@@ -340,6 +345,8 @@ header {
     }
 
 }
+
+
 
 .showcase {
     background-color: #F0EFE9;
@@ -1236,6 +1243,7 @@ footer {
 
     background-color: #0E1021;
     color: white;
+   
 
 
     .content {

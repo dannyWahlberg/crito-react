@@ -1,8 +1,27 @@
 import React from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Showcase from '../components/Showcase'
 
 const Home = () => {
   return (
-    <div className='container mt-5' >Home something something</div>
+    <div className='wrapper-grid'>
+      <Header />
+      <Showcase />
+  
+
+
+
+
+
+
+
+
+
+      <Footer />
+     
+
+    </div>
   )
 }
 

@@ -30,18 +30,8 @@ const Home = () => {
       <ArticleSection />
       <SignupSection />
       </div>
-
-  
-
-
-
-
-
-
-
-
-
-      <Footer style={{gridArea: 'footer'}} />
+      
+       <Footer style={{gridArea: 'footer'}} />
      
 
     </div>

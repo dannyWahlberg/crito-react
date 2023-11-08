@@ -7,7 +7,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className='wrapper-grid'>
-        <Header />
+     <Header style={{gridArea: 'header'}} />
 
         <div className="main">
         
@@ -16,7 +16,7 @@ const Contact = () => {
 
         </div>
 
-        <Footer />
+<Footer style={{gridArea: 'footer'}} />
         </div>
   )
 }

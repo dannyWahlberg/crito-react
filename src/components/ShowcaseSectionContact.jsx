@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import showcase_waves from '@images/showcase-waves.svg'
 
 const ShowcaseSectionContact = () => {
   return (
@@ -14,6 +15,7 @@ const ShowcaseSectionContact = () => {
         <h1>
             Let's Connect
         </h1>
+        <img className="showcase-waves" src={showcase_waves} alt="" />
     </div>
 
 </div>

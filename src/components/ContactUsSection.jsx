@@ -3,6 +3,7 @@ import contact_box_one from '@images/contact-box-one.svg'
 import contact_box_two from '@images/contact-box-two.svg'
 import contact_box_three from '@images/contact-box-three.svg'
 import map_image from '@images/map-image.svg'
+import Submitform from './SubmitForm'
 
 const ContactUsSection = () => {
   return (
@@ -15,7 +16,7 @@ const ContactUsSection = () => {
                 <img src={contact_box_one} alt="location dart image" />
             </div>
            <div className="text">
-            <p className="big-para" >Visit us</p>
+            <p className="big-para">Visit us</p>
             <p>Sveavägen 31</p>
             <p>111 34 STOCKHOLM</p>
         </div>
@@ -45,29 +46,7 @@ const ContactUsSection = () => {
             <p>support@crito.com</p>
         </div>
         </div>
-
-        <div className="big-contact-box">
-
-            <h3>Leave us a message for any information.</h3>
-            
-            <form action="#" className="contact-form" method="post">
-                
-                <input tabIndex="1" type="text" id="name" name="name" required placeholder="Name*" />
-        
-                
-                <input tabIndex="2" type="email" id="email" name="email" required placeholder="Email*" />
-        
-                
-                <textarea tabIndex="3" id="message" name="message" rows="4" required placeholder="Your Message*"></textarea>
-        
-                
-                <button tabIndex="4" className="submit-btn" type="submit">
-                    Send Message <i className="fa-regular fa-arrow-up-right"></i>
-                </button>
-
-            </form>
-
-        </div>
+         <Submitform />
 
     </div>
 

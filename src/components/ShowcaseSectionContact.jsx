@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ShowcaseSectionContact = () => {
   return (
@@ -6,8 +7,8 @@ const ShowcaseSectionContact = () => {
 
     <div className="content container">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="contact.html" className="active">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/contact" className="active">Contact</Link>
         </nav>
 
         <h1>

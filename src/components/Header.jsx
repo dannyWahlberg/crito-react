@@ -1,6 +1,7 @@
 import React from 'react'
 
 import logo from '@images/logo.svg'
+import { NavLink } from 'react-router-dom'
 
 
 const Header = () => {
@@ -9,9 +10,9 @@ const Header = () => {
     <div className="container">
         <button className="btn-menubars"><i className="fa-solid fa-bars-staggered"></i></button>
         <div className="logotype">
-            <a href="index.html">
+            <NavLink to="/">
                 <img src={logo} alt="crito logotype" />
-            </a>
+            </NavLink>
         </div>
         <div className="contactinformation-bar">
             <div className="content-box">
@@ -36,10 +37,10 @@ const Header = () => {
         </div>
         <div className="menu">
             <nav>
-                <a className="active" href="index.html">Home</a>
-                <a href="service.html">Service</a>
-                <a href="news.html">News</a>
-                <a href="contact.html">Contact</a>
+                <NavLink exact activeClassName="active" to="/">Home</NavLink>
+                <NavLink activeClassName="active" to="/service">Service</NavLink>
+                <NavLink activeClassName="active" to="/news">News</NavLink>
+                <NavLink activeClassName="active" to="/contact">Contact</NavLink>
             </nav>
             <a className="btn-yellow login-btn" href="login.html">Login<i
                     className="fa-regular fa-arrow-up-right"></i></a>

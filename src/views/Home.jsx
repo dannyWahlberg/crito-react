@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import Showcase from '../components/ShowcaseSectionHome'
+import ShowcaseSectionHome from '../components/ShowcaseSectionHome'
 import Partners from '@components/PartnerSection'
 import FeaturesSection from '@components/FeaturesSection'
 import AboutSection from '@components/AboutSection'
@@ -12,6 +12,7 @@ import TeamSection from '@components/TeamSection'
 import ArticleSection from '@components/ArticleSection'
 import SignupSection from '@components/SignupSection'
 
+
 const Home = () => {
   return (
     <div className='wrapper-grid'>
@@ -19,7 +20,7 @@ const Home = () => {
      <Header style={{gridArea: 'header'}} />
       <div className="main" style={{gridArea: 'main'}}>
       
-      <Showcase />
+      <ShowcaseSectionHome />
       <Partners />
       <FeaturesSection />
       <AboutSection />

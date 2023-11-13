@@ -2,6 +2,7 @@ import ContactUsSection from '@components/ContactUsSection'
 import Footer from '@components/Footer'
 import Header from '@components/Header'
 import ShowcaseSectionContact from '@components/ShowcaseSectionContact'
+
 import React from 'react'
 
 const Contact = () => {
@@ -13,6 +14,7 @@ const Contact = () => {
         
         <ShowcaseSectionContact />
         <ContactUsSection />
+       
 
         </div>
 

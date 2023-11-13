@@ -3,7 +3,7 @@ import React from 'react'
 import img_showcase from '@images/showcase-img.svg'
 import showcase_waves from '@images/showcase-waves.svg'
 
-const Showcase = () => {
+const ShowcaseSectionHome = () => {
   return (
     <section className="showcase">
     <div className="container">
@@ -24,4 +24,4 @@ const Showcase = () => {
   )
 }
 
-export default Showcase
+export default ShowcaseSectionHome

@@ -37,10 +37,10 @@ const Header = () => {
         </div>
         <div className="menu">
             <nav>
-                <NavLink exact activeClassName="active" to="/">Home</NavLink>
-                <NavLink activeClassName="active" to="/service">Service</NavLink>
-                <NavLink activeClassName="active" to="/news">News</NavLink>
-                <NavLink activeClassName="active" to="/contact">Contact</NavLink>
+                <NavLink className="" to="/" >Home</NavLink>
+                <NavLink className="" to="/service">Service</NavLink>
+                <NavLink className="" to="/news">News</NavLink>
+                <NavLink className="" to="/contact">Contact</NavLink>
             </nav>
             <a className="btn-yellow login-btn" href="login.html">Login<i
                     className="fa-regular fa-arrow-up-right"></i></a>

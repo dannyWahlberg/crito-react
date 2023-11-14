@@ -1,11 +1,11 @@
 import React from 'react'
 
-import submit_waves_image from '@images/submit-waves.svg'
+import submit_waves_image from '../assets/images/submit-waves.svg'
 
 const SignupSection = () => {
   return (
     <section className="signup">
-    <img className={submit_waves_image} src="images/submit-waves.svg" alt="" />
+    <img className={submit_waves_image} alt="" />
 
 
     <div className="content container">

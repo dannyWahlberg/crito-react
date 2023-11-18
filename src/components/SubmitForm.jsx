@@ -1,13 +1,34 @@
 import React, { useState } from 'react'
+import ErrorMessage from './ErrorMessage'
+import SuccessMessage from './SuccessMessage'
 
 const Submitform = () => {
   const [name,setName] = useState('')
   const [email,setEmail] = useState('')
   const [message,setMessage] = useState('')
+  const [error, setError] = useState('');
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
+
+  
+  
 
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+   
+
+
+    if (!name || !email || !message) {
+      setError('Please fill in all fields.');
+      return;
+    }
+
+    if (name.length < 2 || email.length < 2 || message.length < 2) {
+      setError('Please enter more than 1 character for all fields.');
+      return;
+    }
+
+    
 
     const userMessage = {name,email,message}
     const json = JSON.stringify(userMessage)
@@ -24,11 +45,13 @@ const Submitform = () => {
     clearForm()
     
     if (result.status === 200) {
-
-      alert('Tack för ditt meddelande')
+      // alert ('message sent')
+      setShowSuccessMessage(true)
+      showSuccessMessage();
+      setError('')
     } else {
 
-      alert ('Något gick fel')
+      alert('something went wrong')
     }
 
   }
@@ -49,6 +72,12 @@ const Submitform = () => {
     <form onSubmit={handleSubmit} noValidate>
        
         <h1>Leave us a message <br /> for any information</h1>
+
+        <ErrorMessage error={error} />
+        <SuccessMessage message="Success! Your message has been sent." />
+
+       
+        
         
         <div className="signup-box">
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='Name*' tabIndex={1} />

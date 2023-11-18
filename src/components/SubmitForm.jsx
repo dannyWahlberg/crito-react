@@ -7,7 +7,8 @@ const Submitform = () => {
   const [email,setEmail] = useState('')
   const [message,setMessage] = useState('')
   const [error, setError] = useState('');
-  const [showSuccessMessage, setShowSuccessMessage] = useState(false)
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  
 
   
   
@@ -45,10 +46,11 @@ const Submitform = () => {
     clearForm()
     
     if (result.status === 200) {
-      // alert ('message sent')
-      setShowSuccessMessage(true)
-      showSuccessMessage();
-      setError('')
+      
+      setError('');
+      setShowSuccessMessage(true);
+      setTimeout(() => setShowSuccessMessage(false), 3000);
+      console.log(result.status)
     } else {
 
       alert('something went wrong')
@@ -74,10 +76,6 @@ const Submitform = () => {
         <h1>Leave us a message <br /> for any information</h1>
 
         <ErrorMessage error={error} />
-        <SuccessMessage message="Success! Your message has been sent." />
-
-       
-        
         
         <div className="signup-box">
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='Name*' tabIndex={1} />
@@ -92,6 +90,8 @@ const Submitform = () => {
 
 
     </form>
+
+    {showSuccessMessage && <SuccessMessage message="Your message was sent successfully!" />}
     </div>
   )
 }

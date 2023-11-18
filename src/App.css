@@ -1125,3 +1125,9 @@ footer .bottom .bottom-section .socialmedia-bar a:hover {
   font-size: 16px;
   font-weight: bold;
 }
+
+.construction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
